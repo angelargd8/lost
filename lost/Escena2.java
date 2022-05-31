@@ -21,7 +21,7 @@ public class Escena2 extends World
     public void act(){//permite que el jugador pueda seleccionar las opciones del menu
         if(Greenfoot.isKeyDown("SPACE")||Greenfoot.isKeyDown("ENTER"))
         {
-            Greenfoot.delay(5); //para esperar tiempo    
+            Greenfoot.delay(10); //para esperar tiempo    
             Greenfoot.setWorld(new Escena3());
         }
         }
