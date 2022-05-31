@@ -12,6 +12,8 @@ public class maze extends World
     public static WallHor w2 = new WallHor();
     public static detectiveMaz dm = new detectiveMaz();
     public static nextLe nl = new nextLe();
+    
+    
     /**
      * Constructor for objects of class maze.
      * 
