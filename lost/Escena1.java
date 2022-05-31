@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Escena1 extends World
 {
-    private int opcion = 0;
     /**
      * Constructor for objects of class Escena1.
      * 
@@ -27,13 +26,10 @@ public class Escena1 extends World
     }
     public void act(){//permite que el jugador pueda seleccionar las opciones del menu
         if(Greenfoot.isKeyDown("SPACE")||Greenfoot.isKeyDown("ENTER")){
-            switch(opcion){
-            case 0:
-                Greenfoot.setWorld(new Escena2());
-            //case 1:
-                //Greenfoot.stop();
-                //break;
+            Greenfoot.delay(5); //para esperar tiempo       
+            Greenfoot.setWorld(new Escena2());
+
             }
         }
-    }
+    
 }
