@@ -23,11 +23,11 @@ public class hermano extends Actor
     
     public void mover()
     {
-        if(Greenfoot.isKeyDown("Up"))
+        if(Greenfoot.isKeyDown("W"))
         {
             setLocation(getX(),getY()-10); 
         }
-        if(Greenfoot.isKeyDown("Down"))
+        if(Greenfoot.isKeyDown("S"))
         {
              setLocation(getX(),getY()+10); 
         }
