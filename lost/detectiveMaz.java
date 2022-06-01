@@ -72,7 +72,7 @@ public class detectiveMaz extends Actor
         else if (nl != null){
             //Aqui se pone para ir al siguiente mundo
             //Greenfoot.setWorld(new siguiente_pantalla());
-            Greenfoot.setWorld(new Escena7());
+            Greenfoot.setWorld(new Escena88());
         }
     }
     
