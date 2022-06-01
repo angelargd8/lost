@@ -17,6 +17,13 @@ public class Escena8 extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        musica();
+    }
+    private void musica(){//añade musica al juego
+        GreenfootSound musica = new GreenfootSound("sonidito.wav");
+        musica.setVolume(25);
+        musica.playLoop();
+    
     }
     
 }

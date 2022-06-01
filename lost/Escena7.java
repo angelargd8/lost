@@ -17,6 +17,7 @@ public class Escena7 extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        musica();
     }
     public void act(){//permite que el jugador pueda seleccionar las opciones del menu
         if(Greenfoot.isKeyDown("SPACE")||Greenfoot.isKeyDown("ENTER"))
@@ -25,4 +26,10 @@ public class Escena7 extends World
             Greenfoot.setWorld(new Escena88());
         }
         }
+        private void musica(){//añade musica al juego
+        GreenfootSound musica = new GreenfootSound("sonidito.wav");
+        musica.setVolume(25);
+        musica.playLoop();
+    
+    }
 }

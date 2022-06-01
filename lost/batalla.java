@@ -18,6 +18,7 @@ public class batalla extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         prepare();
+        musica();
     }
     /**
      * Prepare the world for the start of the program.
@@ -58,5 +59,11 @@ public class batalla extends World
         addObject(oso11,558,356);
         oso oso12 = new oso();
         addObject(oso12,489,376);
+    }
+    private void musica(){//añade musica al juego
+        GreenfootSound musica = new GreenfootSound("sonidito.wav");
+        musica.setVolume(25);
+        musica.playLoop();
+    
     }
 }

@@ -40,5 +40,12 @@ public class maze extends World
         addObject(new shoe(),555,350);
         //Key
         addObject(new key(),150,35);
+        musica();
+    }
+    private void musica(){//añade musica al juego
+        GreenfootSound musica = new GreenfootSound("sonidito.wav");
+        musica.setVolume(25);
+        musica.playLoop();
+    
     }
 }
