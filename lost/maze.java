@@ -6,12 +6,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
+//aaaaaa
 public class maze extends World
 {
     public static wall w1 = new wall();
     public static WallHor w2 = new WallHor();
     public static detectiveMaz dm = new detectiveMaz();
     public static nextLe nl = new nextLe();
+    
+    
     /**
      * Constructor for objects of class maze.
      * 

@@ -132,6 +132,7 @@ dependency8.type=UsesDependency
 dependency9.from=maze
 dependency9.to=WallHor
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=736
 editor.fx.0.width=1382
 editor.fx.0.x=-8
@@ -139,6 +140,15 @@ editor.fx.0.y=-8
 height=736
 package.numDependencies=35
 package.numTargets=30
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=158
+editor.fx.0.y=76
+height=744
+package.numDependencies=29
+package.numTargets=24
+>>>>>>> 4cd99ce74834a74f1dc2da24745c96d242170035
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
@@ -174,14 +184,22 @@ target11.width=120
 target11.x=0
 target11.y=0
 target12.height=70
+<<<<<<< HEAD
 target12.name=Escena7
+=======
+target12.name=key
+>>>>>>> 4cd99ce74834a74f1dc2da24745c96d242170035
 target12.showInterface=false
 target12.type=ClassTarget
 target12.width=120
 target12.x=0
 target12.y=0
 target13.height=70
+<<<<<<< HEAD
 target13.name=Escena4
+=======
+target13.name=shoe
+>>>>>>> 4cd99ce74834a74f1dc2da24745c96d242170035
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=120
@@ -366,4 +384,4 @@ version=3.0.0
 width=1382
 world.lastInstantiated=menu
 xPosition=0
-yPosition=0
+yPosition=22
