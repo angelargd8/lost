@@ -19,7 +19,7 @@ public class menu extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); //imagen de fondo
         prepare();
-        
+        musica();
     }
       
     private void prepare()//prepara el menú con los objetos necesarios
@@ -30,8 +30,8 @@ public class menu extends World
         addObject(Flecha, 50, 300);
     }
     public void act(){//permite que el jugador pueda seleccionar las opciones del menu
-        if((Greenfoot.isKeyDown("W")) && opcion!=0){opcion++;}//para  arriba y el otro para abajo
-        if(Greenfoot.isKeyDown("S") && opcion!=1){opcion--;}
+        if((Greenfoot.isKeyDown("Up")) && opcion!=0){opcion++;}//para  arriba y el otro para abajo
+        if(Greenfoot.isKeyDown("Down") && opcion!=1){opcion--;}
         if(opcion >= 2) opcion=0;
         if(opcion<0)opcion=1;
         Flecha.setLocation(50, 300 + (opcion*50)); //permite mover la fecha
@@ -44,5 +44,11 @@ public class menu extends World
                 break;
             }
         }
+    }
+    private void musica(){//añade musica al juego
+        GreenfootSound musica = new GreenfootSound("sonidito.wav");
+        musica.setVolume(25);
+        musica.playLoop();
+    
     }
 }

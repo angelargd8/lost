@@ -22,7 +22,7 @@ public class Escena7 extends World
         if(Greenfoot.isKeyDown("SPACE")||Greenfoot.isKeyDown("ENTER"))
         {
             Greenfoot.delay(10); //para esperar tiempo    
-            Greenfoot.setWorld(new Escena88());
+            Greenfoot.setWorld(new maze());
         }
         }
 }
