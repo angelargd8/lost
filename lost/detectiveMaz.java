@@ -14,6 +14,7 @@ public class detectiveMaz extends Actor
     int detectiveMove = 3;
     boolean zapato;
     boolean llave;
+    //aaaa
     public detectiveMaz(){
         getImage().scale(18,18);
         this.llave = false;
