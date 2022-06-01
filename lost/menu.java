@@ -19,7 +19,7 @@ public class menu extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); //imagen de fondo
         prepare();
-        
+        musica();
     }
       
     private void prepare()//prepara el menú con los objetos necesarios
@@ -44,5 +44,11 @@ public class menu extends World
                 break;
             }
         }
+    }
+    private void musica(){//añade musica al juego
+        GreenfootSound musica = new GreenfootSound("sonidito.wav");
+        musica.setVolume(25);
+        musica.playLoop();
+    
     }
 }
