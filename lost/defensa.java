@@ -16,13 +16,20 @@ public class defensa extends Actor
     {
         // Add your action code here.
         World w = getWorld();
+        World w2 = getWorld();
         move(-5);
         if(isAtEdge())
         {
             w.removeObject(this);
         }
-        else
-            if(isTouching(oso.class))
-            removeTouching(oso.class);
+        else if(isTouching(oso.class)){
+            removeTouching(oso.class);}
+        else if (isTouching(detective.class)){
+            removeTouching(detective.class);
+            //llamar al final bueno 
+        
+        }
+           
+            
     }
 }

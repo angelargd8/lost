@@ -22,5 +22,21 @@ public class oso extends Actor
             //w.removeObject(this);
             setLocation(590,getY());
         }
+        fin();
+    }
+    public void fin() 
+    {
+        Actor hermano;
+        hermano = getOneObjectAtOffset(0,0,hermano.class);
+        
+        if (hermano!=null)
+        {
+            World world;
+            world = getWorld();
+            world.removeObject(hermano);
+            //llamar a la pantalla de perder
+            
+            
+        }
     }
 }

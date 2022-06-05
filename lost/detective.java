@@ -15,5 +15,29 @@ public class detective extends Actor
     public void act()
     {
         // Add your action code here.
+        moveAround();
+        fin();
+    }
+    public void moveAround()
+    {
+        move(5);
+        if (Greenfoot.getRandomNumber(100)<10)
+        {
+            turn(Greenfoot.getRandomNumber(90)-5);
+        }    
+    }
+    public void fin() 
+    {
+        Actor hermano;
+        hermano = getOneObjectAtOffset(0,0,hermano.class);
+        
+        if (hermano!=null)
+        {
+            World world;
+            world = getWorld();
+            world.removeObject(hermano);
+            //llamar a la pantalla de perder
+            
+        }
     }
 }
