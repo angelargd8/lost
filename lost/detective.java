@@ -37,7 +37,7 @@ public class detective extends Actor
             world = getWorld();
             world.removeObject(hermano);
             //llamar a la pantalla de perder
-            
+            Greenfoot.setWorld(new finalperdedor());
         }
     }
 }

@@ -27,7 +27,7 @@ public class defensa extends Actor
         else if (isTouching(detective.class)){
             removeTouching(detective.class);
             //llamar al final bueno 
-        
+            Greenfoot.setWorld(new finalganador());
         }
            
             
